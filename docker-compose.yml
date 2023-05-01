@@ -1,0 +1,14 @@
+version: '3.9'
+
+services:
+  my-sql:
+    image: mysql:8.0
+    ports:
+      - '3309:3306'
+    environment:
+      MYSQL_ROOT_PASSWORD: 1234
+      MYSQL_DATABASE: backend_nestjs
+      MYSQL_USER: theanh58
+      MYSQL_PASSWORD: theanh58
+    # volumes:
+    #   - ./data/mysql:/var/lib/mysql
